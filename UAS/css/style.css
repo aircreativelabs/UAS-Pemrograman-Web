@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(../font/Oswald-Regular.ttf);
+}
+
+body{
+	padding-right: 15px;
+	padding-left: 15px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.afternav { grid-area: afternav; }
+.info { grid-area: info; }
+.main { grid-area: main; }
+.right { grid-area: right; }
+.footer { grid-area: footer; }
+
+.container{
+	display: grid;
+  	grid-template-areas:
+    'afternav afternav afternav afternav afternav afternav'
+    'info main main main right right'
+    'info footer footer footer footer footer';
+    grid-gap: 10px;
+}
+
+.header {
+    text-align: left;
+    border-top: 8px solid #007600;
+}
+
+.logo{
+	width: 500px;
+	height: auto;
+}
+
+.navbar {
+    display: flex;
+    background-color: #007600;
+    font-family: 'Oswald',sans-serif;
+    font-size: 11pt;
+    border-bottom: 2px solid #fff000;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #333;
+    color: #fff000;
+}
+
+.sub-navbar {
+    display: flex;
+    background-color: #ccefef;
+    font-family: 'Oswald',sans-serif;
+    font-size: 11pt;
+    border-bottom: 0;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.sub-navbar a {
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.banner{
+	width: 101%;
+	height: auto;
+	background-repeat: no-repeat;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-left: 11px;
+}
+
+.tickercontainer{
+	display: flex;
+	align-items: stretch;
+}
+
+.tickercontainer > div{
+	background-color: #007600;
+	height: 30px;
+	padding: 5px;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.info{
+	flex: 55%;
+	height: auto;
+}
+
+.info > img{
+	width: 100%;
+	height: auto;
+}
+
+.main{
+	flex: 45%;
+	height: auto;
+	padding-left: 8px;
+	float: right;
+}
+
+.section{
+	flex: 33%;
+	height: auto;
+	padding-right: 8px;
+	float: left;
+}
+
+.newest{
+	display: flex;
+	background-color: #007600;
+	border-bottom: 2px solid #fff000;
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 44%;
+	text-transform: uppercase;
+	font-family: 'Oswald',sans-serif;
+	color: white;
+	text-align: center;
+}
+
+.content{
+	display: flex;
+	padding-top: 20px;
+}
+
+.content > img{
+	width: 100px;
+	height: 100px;
+	padding-right: 10px;
+}
+
+.content > div a{
+	color: #222;
+	font-family: 'Oswald',sans-serif;
+	text-decoration: bold;
+	font-size: 13pt;
+	text-decoration: none;
+}
+
+.content > div p{
+	font-size: 10pt;
+}
+
+.more{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.more > a{
+	display: flex;
+	background-color: #efefef;
+	color: black;
+	font-family: "Oswald",sans-serif;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #ccc;
+	text-decoration: none;
+	padding-left: 43%;
+}
+
+.kategori{
+	display: flex;
+	padding-top: 20px;
+}
+
+.kategori > div{
+	padding-right: 5px;
+	padding-bottom: 10px;
+}
+
+.kategori > div a{
+	text-decoration: none;
+	background-color: #CCEFEF;
+	color: black;
+	font-family: 'Oswald', sans-serif;
+	padding: 10px;
+}
+
+.kategori > div a:hover{
+	text-decoration: none;
+	background-color: #82BF40;
+	color: white;
+	padding: 10px;
+}
+
+.jogjasmart{
+	display: flex;
+	width: 100%;
+	padding-top: 10px;
+}
+
+.jogjasmart > img{
+	flex: 100%;
+	width: 20%;
+	height: 20%;
+}
+
+.footer{
+	display: flex;
+	background-color: #252525;
+}
+
+.secfoot{
+	flex: 33%;
+	height: auto;
+	padding-right: 8px;
+	float: left;
+	padding: 10px;
+}
+
+.titlefoot{
+	background-color: #252525;
+	border-bottom: 2px solid #666;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+}
+
+.secfoot > p{
+	color: white;
+}
+
+.copyright{
+	flex: 100%;
+	background-color: #303030;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+
+.copyright > a{
+	color: white;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+    .row, .navbar, .sub-navbar, .banner, .tickercontainer, .jogjasmart, .section {   
+        flex-direction: column;
+    }
+}

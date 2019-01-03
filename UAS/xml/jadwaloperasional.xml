@@ -1,0 +1,37 @@
+<TABEL>
+	<DATA>
+		<HARI>Senin</HARI>
+		<JAM>08.00-15.00</JAM>
+		<PETUGAS>Kevin</PETUGAS>
+	</DATA>
+	<DATA>
+		<HARI>Selasa</HARI>
+		<JAM>08.00-15.00</JAM>
+		<PETUGAS>Robert</PETUGAS>
+	</DATA>
+	<DATA>
+		<HARI>Rabu</HARI>
+		<JAM>08.00-15.00</JAM>
+		<PETUGAS>Smith</PETUGAS>
+	</DATA>
+	<DATA>
+		<HARI>Kamis</HARI>
+		<JAM>08.00-15.00</JAM>
+		<PETUGAS>John</PETUGAS>
+	</DATA>
+	<DATA>
+		<HARI>Jumat</HARI>
+		<JAM>08.00-11.00</JAM>
+		<PETUGAS>Lia</PETUGAS>
+	</DATA>
+	<DATA>
+		<HARI>Sabtu</HARI>
+		<JAM>08.00-12.00</JAM>
+		<PETUGAS>Desi</PETUGAS>
+	</DATA>
+	<DATA>
+		<HARI>Minggu</HARI>
+		<JAM>08.00-12.00</JAM>
+		<PETUGAS>Tono</PETUGAS>
+	</DATA>
+</TABEL>
